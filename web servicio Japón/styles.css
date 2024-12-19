@@ -1,0 +1,174 @@
+
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+/*Estilos generales*/
+body {
+        font-family: "Sawarabi Mincho", serif;
+        font-weight: 400;
+        font-style: normal;
+        box-sizing: border-box;
+        color: #fff;
+        background-color:  #e63946;
+        line-height: 1.6; 
+}
+
+body p {
+    padding: 10px;
+}
+
+h1 {
+    font-size: 52px;
+    color: white;
+    text-shadow: 1px 1px  black;
+    justify-self: center;
+    padding-top: 13rem;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+h2, h3, h4, p, ul, li {
+    padding: 2px;
+    margin-left: 10px;
+}
+
+a:any-link {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #8b0000;
+}
+
+/*Selectores*/
+#inicio {
+    background-image: url(imagenes/img\ inicio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30rem;
+    background-position: center;
+}
+
+
+
+
+
+#informacion {
+    background-color:#222;
+}
+
+/*grid destinos*/
+.griddestinos {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    gap: 10px;
+    margin-top: 15px;
+    margin: 20px;
+    justify-content: center;
+}
+
+.carddestino {
+    background-color: #222;
+    color: white;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.carddestino h4 {
+    font-size: 20px;
+}
+
+/*gastronomia*/
+#gastronomia {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+/*nav*/
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #222;
+    border-bottom: 1px solid #ffffff;
+    padding-top: 10px;
+    text-align: center;
+}
+
+nav ul {
+    display: inline-block;
+}
+
+nav ul li {
+    float: left;
+    margin-right: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+
+/*responsive*/
+@media screen and (max-width: 768px) {
+    .griddestinos {
+        grid-template-columns: repeat(1, 350px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .griddestinos {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 36px;
+        padding-top: 8rem;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    nav ul li {
+        float: none;
+        display: inline-block;
+        margin: 0;
+    }
+
+    body {
+        justify-content: justify;
+        align-items: justify;
+    }
+}
+    
+
+
+
