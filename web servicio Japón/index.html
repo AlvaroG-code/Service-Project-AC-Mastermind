@@ -7,7 +7,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>Viaja a Japón</title>
+    <script src="https://kit.fontawesome.com/4c25cee379.js" crossorigin="anonymous"></script>
+    <title>Conoce y viaja a Japón</title>
 </head>
     <body>
         <!--nav-->
@@ -68,24 +69,65 @@
             <div>
                 <h2>Gastronomía</h2>
                 <p>La gastronomía japonesa es muy variada y deliciosa, entre los platos más conocidos están:</p>
-                    <ul>
-                    <li>Sushi</li>
-                    <li>Ramen</li>
-                    <li>Tempura</li>
-                    <li>Yakitori</li>
-                    <li>Okonomiyaki</li>
-                    </ul>
+                <div class="gridgastronomia">
+                    <div id="one" class="cardgastronomia">
+                        <h4>SUSHI</h4>
+                        <img src="imagenes/shushi.jpg" alt="sushi">
+                    </div>
+                    <div id="two" class="cardgastronomia">
+                        <h4>RAMEN</h4>
+                        <img src="imagenes/ramen.jpg" alt="ramen">
+                    </div>
+                    <div id="three" class="cardgastronomia">
+                        <h4>TEMPURA</h4>
+                        <img src="imagenes/tempura.jpg" alt="tempura">
+                    </div>
+                    <div id="four" class="cardgastronomia">
+                        <h4>OKONOMIYAKI</h4>
+                        <img src="imagenes/okonomiyaki.jpg" alt="okonomiyaki">
+                    </div>
+                    <div id="five" class="cardgastronomia">
+                        <h4>YAKITORI</h4>
+                        <img src="imagenes/yakitori.jpg" alt="yakitori">
+                    </div>
+                    <div id="six" class="cardgastronomia">
+                        <h4>ONIGIRI</h4>
+                        <img src="imagenes/onigiri.jpg" alt="onigiri">
+                    </div>
+                </div>    
             </div>
-        </section>
-           
-        </section>
         <!--Bloque de contacto-->
         <section id="contacto">
             <h2>Contacto</h2>
             <p>Si te gusta la cultura asiática, la gastronomía y la tecnología, Japón es un destino que debes visitar. ¡No te arrepentirás!</p>
+            <form action="#" method="post">
+                <div class="itemform">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" minlength="3" maxlength="30"  size="32">
+                </div>
+                <div class="itemform">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" minlength="3" maxlength="128"  size="32" required>
+                </div>
+                <div class="itemform">
+                    <label for="empresa">Empresa</label>
+                    <input type="text" id="empresa" name="empresa" minlength="3" maxlength="128" required size="32">
+                </div>
+                <div class="itemform">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" cols="33" rows="5" placeholder="Escribe tu mensaje aquí"></textarea>
+                </div>
+                <div class="itemform">
+                    <input type="submit" name="enviar" value="Enviar">
+                </div>
+            </form>   
         </section>
-        <footer>
-            <p>© 2020 Viaja a Japón</p>
+        <footer id="footer">
+            <a href="https://github.com/AlvaroG-code" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></a></i>
+            <a href="https://www.linkedin.com/in/%C3%A1lvaro-garc%C3%ADa-s%C3%A1nchez-66232418a/" target="_blank"><i class="fa-brands fa-linkedin"></a></i>
+            <a href="mailto:alvarogprod@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://wa.me/34699879165"><i class="fa-brands fa-whatsapp"></i></a>
+            <p>©Álvaro García</p>
         </footer>
     </article>
     </body>
